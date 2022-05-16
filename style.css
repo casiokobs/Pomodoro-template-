@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap');
+:root{
+    --main-color: #da6266;
+}
+*{
+    font-family: 'Urbanist';
+}
+.container{
+    margin: 5%;
+}
+.back{
+    font-size: 20px;
+    margin-bottom: 60px;   
+}
+.title{
+    font-weight: 600;
+    font-size: 23px;
+    margin: 18px;
+    line-height:50px;
+}
+.inputs{
+    width: 80%;
+    margin-bottom: 10px;
+}
+.inputs i{
+    position: absolute;
+}
+.icon{
+    margin: -45px 0 0 30px;
+    color: #9e9e9e;
+    text-align: left;
+}
+.inputs input {
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    padding-left: 18%;
+    border-style: none;
+    background-color: #fafafa;
+    border-radius: 10px;
+    margin: 3%;
+}
+.inputs input:valid ~.icon{
+    color: black;
+
+}
+.button{
+    background: var(--main-color);
+    border-style: none;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 50px;
+}
+.color{
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+.div-line{
+    margin-top: 30px;
+    display:inline-block;
+    width: 100%;
+}
+.div-line hr{
+    text-decoration: none;
+    margin: 13px 10px 0 0;
+    width: 30%;
+    color: #6d6d6d;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.div-check{
+    margin: 5%;
+}
+.remember{
+    float: left;
+    margin-right: 10px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.line-continue{
+    font-weight: 600;
+    margin-top: auto;
+    display: contents;
+    color: #6d6d6d;
+}
+
+.forgot{
+    margin: 25px;
+    font-weight: 600;
+}
+.span{
+    font-size: 15px;
+    font-weight: bold;
+}
+.login-option{
+    margin: 5%;
+}
+.login-option img{
+    border: #f3f3f3 2px solid;
+    padding: 15px 25px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.off-text{
+    color: #9e9e9e;
+    font-size: 15px;
+}
+.checkmark{
+    display: block;
+    position: absolute;
+    left: 50px;
+    height: 25px;
+    width: 25px;
+    color: red;
+    border-color:var(--main-color);
+    border-radius: 2px;
+}
+.container-check:hover input ~.checkmark{
+    background: red;
+}
+.container-check:checked input ~.checkmark{
+    background: red;
+}
+.container-check .checkmark::after{
+    content: '';
+    position: absolute;
+    display: none;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.container-check input:checked ~.checkmark::after{
+    display: block;
+}
+.loading{
+    background: linear-gradient(45deg, #ff7e82, #ff5d62);
+}
